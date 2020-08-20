@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto MKOT Alberto Pérez</title>
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script src="vendor/jQuery.js"></script>
+    <script src="index.js" type="module"></script>
+  </head>
+
+  <body>
+    <section class="oculto">
+      <audio class="audio" id="cambio" controls>
+        <source type="audio/mp3" src="./src/assets/audio/campanilla.mp3" />
+      </audio>
+      <audio class="audio" id="tirar" controls>
+        <source type="audio/mp3" src="./src/assets/audio/dice-roll.mp3" />
+      </audio>
+      <audio class="audio" id="win" controls>
+        <source type="audio/mp3" src="./src/assets/audio/win.mp3" />
+      </audio>
+    </section>
+    <section class="" id="inicio">
+      <article class="" id="comenzar">
+        <select class="btn" name="nJugadores" id="nJugadores">
+          <option selected disabled>Número de jugadores</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        <button class="btn" id="jugar">Jugar</button>
+        <a
+          class="btn"
+          href="https://www.youtube.com/watch?v=VKcXITTE144"
+          target="_blank"
+          >Cómo Jugar</a
+        >
+      </article>
+    </section>
+    <section class="oculto" id="mesa">
+      <article class="oculto" id="ganador">
+        <section>
+          <button class="btn" id="volverAJugar">Volver a Jugar</button>
+          <h1>El rey de Toky es:</h1>
+          <img id="monstruoGanador" src="" />
+        </section>
+      </article>
+      <article class="container" id="resumenTurno">
+        <section id="resumen"></section>
+      </article>
+      <section id="dados">
+        <!--        <table>
+          <tr>
+            <td>
+              <img id="d1" src="./src/assets/img/dices/dice1.jpg" alt="" />
+            </td>
+            <td>
+              <img id="d2" src="./src/assets/img/dices/dice2.jpg" alt="" />
+            </td>
+            <td>
+              <img id="d3" src="./src/assets/img/dices/dice3.jpg" alt="" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img id="d4" src="./src/assets/img/dices/diceAttack.jpg" alt="" />
+            </td>
+            <td>
+              <img id="d5" src="./src/assets/img/dices/diceEnergy.jpg" alt="" />
+            </td>
+            <td>
+              <img id="d6" src="./src/assets/img/dices/diceHealth.jpg" alt="" />
+            </td>
+          </tr>
+        </table>-->
+        <ul>
+          <li>
+            <img id="d1" src="./src/assets/img/dices/dice1.jpg" alt="" />
+          </li>
+          <li>
+            <img id="d2" src="./src/assets/img/dices/dice2.jpg" alt="" />
+          </li>
+          <li>
+            <img id="d3" src="./src/assets/img/dices/dice3.jpg" alt="" />
+          </li>
+          <li>
+            <img id="d4" src="./src/assets/img/dices/diceAttack.jpg" alt="" />
+          </li>
+          <li>
+            <img id="d5" src="./src/assets/img/dices/diceEnergy.jpg" alt="" />
+          </li>
+          <li>
+            <img id="d6" src="./src/assets/img/dices/diceHealth.jpg" alt="" />
+          </li>
+        </ul>
+      </section>
+      <section id="acciones" class="middle-wrapper">
+        <button id="lanzar" class="btn">
+          <span class="roll-icon icon"></span>Lanzar
+        </button>
+        <button id="terminar" class="btn">
+          <span class="end-icon icon"></span>Finalizar
+        </button>
+        <button id="salir" class="btn">
+          <span class="exit-icon icon"></span>Salir
+        </button>
+      </section>
+      <section id="tablero">
+        <img class="tokyo" src="src/assets/img/avatares/1.png" alt="" />
+      </section>
+      <section id="info">
+        <div class="container container_column"></div>
+      </section>
+    </section>
+  </body>
+</html>
